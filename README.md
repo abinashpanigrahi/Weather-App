@@ -3,9 +3,9 @@
 
 - This web application shows the weather information for a city.
 
-- User can search a city and the application will display the current weather information with map location of the place. 
+- Users can search a city and the application will display the current weather information along with map location of the place. 
 
-- The application also shows the weekly forecast for the next 7 days of the city.
+- The application also shows the weather forecast for the next 7 days of the city.
 
 
 ## Deployed Link
