@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 *{
     margin: 0px;
     box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 
 #navbar{
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +30,7 @@ body{
     left: 0;
     right: 0;
     z-index: 200;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #navbar img{
@@ -30,25 +39,20 @@ body{
 
 
 #searchDiv{
-    width: 100%;
-    height: 80px;
-    padding: 10px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #f2f2f2;
-    position: sticky;
-    top: 70px;
-    left: 0;
-    right: 0;
-    z-index: 100;
 }
 
 #city{
     padding: 10px;
+    padding-left: 20px;
     font-size: 18px;
     width: 40%;
+    border-radius: 20px;
+    background-color: whitesmoke;
 }
 
 #city:focus{
@@ -57,20 +61,31 @@ body{
 }
 
 #searchbtn{
-    width: 10%;
+    width: 4%;
     padding: 10px;
-    font-size: 18px;
-    background-color: #48484a;
+    /* font-size: 18px; */
+    background-color: grey;
     color: #fff;
     cursor: pointer;
+    border-radius: 30px;
+    border: 0px;
 }
 
 
 
 #searchbtn:hover{
-    background-color: grey;
+    background-color: #282828;
     border: 0px;
-    outline: 1px solid grey;
+    outline: 3px solid #282828;
+}
+
+#welcomeText{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    color: #282828;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -78,8 +93,14 @@ body{
 
 #container{
     width: 100%;
+    /* height: 100vh; */
+    padding: 1px;
     /* border: 1px solid red; */
-    margin-top: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(0.9); */
+    display: none;
 }
 
 #currentWeather{
@@ -99,6 +120,9 @@ body{
     height: 100%;
     padding: 10px;
     padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
     /* border: 1px solid blue; */
 }
 
@@ -152,7 +176,8 @@ body{
 #locationMap{
     width: 55%;
     height: 100%;
-    padding-right: 15px;
+    /* padding-right: 15px; */
+    border-radius: 20px;
     /* padding: 10px; */
     /* border: 1px solid blue; */
 }
@@ -160,10 +185,22 @@ body{
 #locationMap iframe{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+}
+
+
+#forecast-wrapper{
+    width: 80%;
+    margin: auto;
+    /* height: 400px; */
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding-bottom: 5px;
 }
 
 #weekForecast{
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -182,9 +219,10 @@ body{
 } */
 
 #msg{
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
+    padding-top: 10px;
     padding-left: 30px;
 }
 
@@ -194,13 +232,17 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    background-color: #c5bbbb;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.8);
+    border-radius: 20px;
+    color: white;
 }
 
 .weekDayDiv p{
     margin-top: 5px;
+    color: white;
 }
 
 
@@ -213,26 +255,38 @@ body{
 
 @media all and (max-width: 700px){
     #searchDiv{
-        justify-content: space-between;
+        justify-content: center;
     }
 
     #city{
-        width: 60%;
+        width: 70%;
+        background-color: whitesmoke;
+    }
+
+    #welcomeText{
+        font-size: 28px;
     }
 
     #searchbtn{
-        width: 30%;
+        width: 15%;
+    }
+
+    #container{
+        width: 100%;
     }
 
     #currentWeather{
         width: 100%;
         height: 100vh;
         flex-direction: column;
+        gap: 20px;
     }
 
     #locationInfo{
         width: 90%;
-        padding-right: 10px;
+        margin: auto;
+        padding: 25px;
+        background-color: #accdf1;
     }
 
     #locationMap{
@@ -241,17 +295,37 @@ body{
         padding: 0px;
     }
 
+    #forecast-wrapper{
+        width: 90%;
+        margin: auto;
+        background-color: whitesmoke;
+    }
+
     #weekForecast{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 220px;
-        grid-auto-rows: 220px;
-        padding: 20px;
+        grid-template-rows: 170px;
+        grid-auto-rows: 170px;
+        padding: 15px;
     }
+
+    .weekDayDiv h3{
+        font-size: 18px;
+    }
+
+    .weekDayDiv p{
+        font-size: 16px;
+    }
+
+    .weekDayDiv img{
+        width: 60px;
+        height: 60px;
+    }
+
 
     #msg{
         width: 100%;
-        padding-right: 20px;
+        /* padding-right: 20px; */
     }
 }
 

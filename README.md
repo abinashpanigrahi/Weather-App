@@ -10,7 +10,7 @@
 
 ## Deployed Link
 
-- https://weather-app-dexter.netlify.app/
+- https://weather-app-dwight.netlify.app/
 
 
 ## API Reference
