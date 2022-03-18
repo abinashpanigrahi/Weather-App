@@ -57,7 +57,7 @@ async function getCurrentWeather(city){
     try{
         let fetch_promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=07f82d73a01aa9f2320e8b7e6819d70a&units=metric`)
         let weather_data = await fetch_promise.json();
-        console.log(weather_data);
+        //console.log(weather_data);
         if(weather_data.cod === "404"){
             // No such city found
 
@@ -91,7 +91,7 @@ async function getWeekForecast(city){
     try{
         let fetch_promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&cnt=7&appid=07f82d73a01aa9f2320e8b7e6819d70a&units=metric`)
         let forecast_data = await fetch_promise.json();
-        console.log(forecast_data);
+        //console.log(forecast_data);
         if(forecast_data.cod !== "404"){
             showForecast(forecast_data.list, forecast_data.city.name);
         }
@@ -234,7 +234,7 @@ function showCurrentWeather(data){
 // Function to append weekly forecast
 
 function showForecast(data, city){
-    console.log("Received data", data);
+    //console.log("Received data", data);
 
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
