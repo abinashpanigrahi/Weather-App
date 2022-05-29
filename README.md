@@ -29,11 +29,15 @@
 
 - **Weather Image 1**
 
-![Wather Image 1](./Website%20Sneak%20Peeks/2.png?raw=true)
+![Weather Image 1](./Website%20Sneak%20Peeks/2.png?raw=true)
 
 - **Weather Image 2**
 
-![Wather Image 2](./Website%20Sneak%20Peeks/3.png?raw=true)
+![Weather Image 2](./Website%20Sneak%20Peeks/3.png?raw=true)
+
+- **Mobile View**
+
+![Mobile View](./Website%20Sneak%20Peeks/4.png?raw=true)
 
 - **Landing Page**
 
