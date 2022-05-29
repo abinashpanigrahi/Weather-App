@@ -10,7 +10,7 @@
 
 ## Deployed Link
 
-- https://weather-app-dwight.netlify.app/
+- [Weather Application](https://weather-app-dwight.netlify.app/)
 
 ## Tech Stack
 
@@ -27,10 +27,6 @@
 
 ## Website Sneak Peaks
 
-- **Landing Page 1**
-
-![Landing Image 1](./Website%20Sneak%20Peeks/1.png?raw=true)
-
 - **Weather Image 1**
 
 ![Wather Image 1](./Website%20Sneak%20Peeks/2.png?raw=true)
@@ -38,5 +34,9 @@
 - **Weather Image 2**
 
 ![Wather Image 2](./Website%20Sneak%20Peeks/3.png?raw=true)
+
+- **Landing Page**
+
+![Landing Image 1](./Website%20Sneak%20Peeks/1.png?raw=true)
 
 
